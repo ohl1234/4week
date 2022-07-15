@@ -1,0 +1,122 @@
+header{
+    .group-util{
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        color: #858585;
+        background-color: #eee;
+        .inner{
+            display: flex;
+            justify-content: flex-end;
+        }
+        a{
+            & + a{
+                margin-left: 21px;
+            }
+        }
+    }
+
+    .group-flex{
+        position: relative;
+        height: 100px;
+        border-bottom: 1px solid #ddd;
+        .inner{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-area{
+            @include position-Center;
+        }
+        .logo{
+            a{
+                &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 171px;
+                    height: 21px;
+                    vertical-align: top;
+                    background-image: url(../images/logo.png);
+                    // scss에서 작성해도 css 기준에서 작성하기!!
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+        .sns-area{
+            display: flex;
+            .link-sns{
+                & + a{
+                    margin-left: 21px;
+                }
+                &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 28px;
+                    height: 28px;
+                    vertical-align: top;
+                    background-image: url(../images/facebook.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &.facebook::after{
+                    background-position: 8px 0;
+                }
+                &.blog::after{
+                    background-image: url(../images/blog.png);
+                }
+                &.instargram::after{
+                    background-image: url(../images/instargram.png);
+                }
+                &.youtube::after{
+                    background-image: url(../images/youtube.png);
+                    background-position: 0 4px;
+                }
+            }
+        }
+        .search-area{
+            .btn-search{
+                display: block;
+                background-color: #fff;
+                border: 2px solid #ddd;
+                &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    vertical-align: top;
+                    background-image: url(../images/search.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
+#gnb{
+    .gnb-area{
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .gnb-list{
+        display: flex;
+    }
+    .gnb-item{
+        flex: 1;
+        text-align: center;
+        &:hover{
+            a{
+                color: #d71609;
+            }
+        }
+        a{
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            font-family: $font-en1;
+            font-weight: 700;
+        }
+    }
+}

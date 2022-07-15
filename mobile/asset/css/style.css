@@ -78,8 +78,10 @@ ul, ol {
     @세팅구역
 */
 body {
+  letter-spacing: -0.025em;
   font-family: "Noto Sans KR", sans-serif;
   color: #222;
+  min-width: 1248px;
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
