@@ -1,3 +1,64 @@
-p{
-    @include ellip(25px,2);
+.container{}
+.sc-visual{
+    position: relative;
+    height: 600px;
+    .link-slide{
+        display: block;
+        height: 100%;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .control_wrap{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1248px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .btn{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &::after{
+            content: '';
+            display: inline-block;
+            vertical-align: top;
+            width: 23px;
+            height: 40px;
+            background-image: url(../images/visual_left_arrow.png);
+            background-repeat: no-repeat;
+        }
+        &.next{
+            right: 0;
+        }
+        &.next::after{
+            background-image: url(../images/visual_right_arrow.png);
+        }
+    }
+
+    .pagination{
+        position: absolute;
+        bottom: 33px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        a{
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color:transparent;
+            border: 2px solid #fff;
+            & + a{
+                margin-left: 11px;
+            }
+            &.active{
+                background-color: #fff;
+            }
+        }
+    }
 }
