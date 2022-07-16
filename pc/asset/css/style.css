@@ -319,6 +319,41 @@ header .group-flex .search-area .btn-search::after {
   font-weight: 700;
 }
 
+.link-detail {
+  display: block;
+  width: 190px;
+  height: 50px;
+  line-height: 46px;
+  background-color: #fff;
+  border: 2px solid #222;
+  color: #222;
+  text-align: center;
+  transition: all 0.3s;
+}
+.link-detail:hover {
+  background-color: #222;
+  color: #fff;
+}
+.sc-recommend .link-detail {
+  position: absolute;
+  left: 20px;
+  bottom: 29px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+.sc-recommend .link-detail:hover {
+  background: none;
+}
+
+.about-title, .sc-intro h3 {
+  font-size: 42px;
+  line-height: 60px;
+  font-weight: 400;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  text-align: center;
+}
+
 .sc-visual {
   position: relative;
   height: 600px;
@@ -380,4 +415,70 @@ header .group-flex .search-area .btn-search::after {
 }
 .sc-visual .pagination a.active {
   background-color: #fff;
+}
+
+.sc-intro .group-cont:nth-of-type(1) h3 {
+  padding: 75px 0 56px;
+}
+.sc-intro .group-cont:nth-of-type(2) h3 {
+  padding: 96px 0 57px;
+}
+.sc-intro .group-cont:nth-of-type(3) h3 {
+  padding: 91px 0 58px;
+}
+.sc-intro .group-cont:nth-of-type(4) h3 {
+  padding: 108px 0 55px;
+}
+.sc-intro .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.sc-intro .wrap.reverse {
+  flex-direction: row-reverse;
+}
+.sc-intro .wrap .info-box {
+  width: 510px;
+}
+.sc-intro .wrap .desc {
+  margin: 41px 0 45px;
+}
+
+.sc-recommend .sc-title {
+  font-size: 42px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 98px 0 50px;
+}
+.sc-recommend .group-cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 500px;
+  background-image: url(../images/recommend_bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sc-recommend .group-cont:nth-of-type(2) {
+  background-image: url(../images/recommend_bg2.png);
+}
+.sc-recommend .group-cont:nth-of-type(3) {
+  background-image: url(../images/recommend_bg3.png);
+}
+.sc-recommend .info-box {
+  position: relative;
+  padding: 22px 20px 31px 20px;
+  width: 370px;
+  height: 330px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.sc-recommend .cont-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.sc-recommend .desc {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 12px 0 46px;
 }
