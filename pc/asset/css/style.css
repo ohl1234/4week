@@ -482,3 +482,145 @@ header .group-flex .search-area .btn-search::after {
   line-height: 22px;
   margin: 12px 0 46px;
 }
+
+.sc-event {
+  padding: 100px 0 70px;
+}
+.sc-event .event-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sc-event .event-item {
+  width: calc((100% - 100px) / 2);
+}
+.sc-event .event-item + li {
+  margin-left: 100px;
+}
+.sc-event .event-item:nth-child(3n) {
+  margin-left: 0;
+}
+.sc-event .event-item:nth-child(n+3) {
+  margin-top: 50px;
+}
+.sc-event .thumb-box {
+  margin-bottom: 23px;
+}
+.sc-event .info-box > * {
+  display: block;
+}
+.sc-event .date {
+  font-size: 18px;
+  color: #858585;
+}
+.sc-event .title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 13px 0 9px;
+}
+.sc-event .desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 28px;
+  max-height: 56px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; /* autoprefixer: off */
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.sc-review .sc-title {
+  line-height: 60px;
+  font-size: 42px;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.sc-review .group-cont {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.sc-review .thumb-box {
+  width: 520px;
+  height: 350px;
+}
+.sc-review .thumb-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc-review .info-box {
+  padding: 20px 0 25px;
+  width: 520px;
+  height: 350px;
+}
+.sc-review .info-box > * {
+  display: block;
+}
+.sc-review .title {
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 700;
+}
+.sc-review .desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 32px;
+  max-height: 192px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical; /* autoprefixer: off */
+  font-size: 18px;
+  line-height: 32px;
+  margin: 9px 0 25px;
+}
+.sc-review .control_wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1246px;
+  height: 430px;
+}
+.sc-review .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sc-review .btn::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 23px;
+  height: 40px;
+  background-image: url(../images/review_left_arrow.png);
+}
+.sc-review .btn.next {
+  right: 0;
+}
+.sc-review .btn.next::after {
+  background-image: url(../images/review_right_arrow.png);
+}
+.sc-review .pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 33px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.sc-review .pagination a {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+}
+.sc-review .pagination a + a {
+  margin-left: 11px;
+}
+.sc-review .pagination a.active {
+  background-color: #ddd;
+}
