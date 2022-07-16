@@ -624,3 +624,49 @@ header .group-flex .search-area .btn-search::after {
 .sc-review .pagination a.active {
   background-color: #ddd;
 }
+
+.group-board {
+  display: flex;
+  justify-content: space-between;
+  padding: 110px 0 120px;
+}
+.group-board .sc-board {
+  position: relative;
+  width: calc((100% - 80px) / 2);
+}
+.group-board .sc-board .title {
+  padding: 18px 0 14px;
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 3px solid #ddd;
+}
+.group-board .board-item {
+  padding: 23px 0 21px;
+  border-bottom: 1px solid #ddd;
+}
+.group-board .board-item a {
+  display: flex;
+  font-size: 16px;
+}
+.group-board .date {
+  color: #888;
+  margin-right: 26px;
+}
+.group-board .btn-more {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: block;
+}
+.group-board .btn-more::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  background-image: url(../images/plus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -282,3 +282,50 @@
         }
     }
 }
+
+.group-board{
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 0 120px;
+    .sc-board{
+        position: relative;
+        width: calc((100% - 80px) / 2);
+
+        .title{
+            padding: 18px 0 14px;
+            font-size: 22px;
+            font-weight: 500;
+            border-bottom: 3px solid #ddd;
+        }
+    }
+    .board-item{
+        padding: 23px 0 21px;
+        border-bottom: 1px solid #ddd;
+        a{
+            display: flex;
+            font-size: 16px;
+        }
+    }
+    .date{
+        color: #888;
+        margin-right: 26px;
+    }
+    .btn-more{
+        position: absolute;
+        top: 15px;
+        right: 0;
+        display: block;
+        &::after{
+            content: '';
+            display: inline-block;
+            vertical-align: top;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            background-image: url(../images/plus.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
