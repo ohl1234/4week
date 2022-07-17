@@ -4,11 +4,10 @@
 .sc-visual{
     position: relative;
     width: 100%;
-    height: 400px;
     .link-slide{
         display: block;
         width: 100%;
-        height: 100%;
+        //height: 400px;
         img{
             width: 100%;
             height: 100%;
@@ -44,9 +43,15 @@
         @extend .about-title;
         padding: 30px 0 8px;
     }
-    .thumb-box{}
+    .thumb-box{
+        img{
+            width: 100%;
+        }
+    }
     .info-box{}
     .desc{
+        font-size: 13px;
+        line-height: 20px;
         padding: 18px 0 21px;
         text-align: left;
     }
@@ -64,9 +69,7 @@
         text-align: center;
     }
     .group-cont{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 45px 40px;
         height: 290px;
         background-image: url(../images/recommend_bg1.png);
         background-repeat: no-repeat;
@@ -80,8 +83,8 @@
     }
     .info-box{
         padding: 20px 16px 0 15px;
-        width: 280px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
         background-color: rgba(#000,.7);
     }
     .title{
@@ -107,6 +110,10 @@
     .thumb-box{
         display: block;
         margin-bottom: 14px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
     }
     .info-box{
         & > *{
@@ -119,6 +126,7 @@
         color: #858585;
     }
     .title{
+        @include ellip;
         font-size: 15px;
         font-weight: 700;
         margin: 13px 0 8px;
@@ -147,7 +155,7 @@
     }
     .thumb-box{
         display: block;
-        height: 176px;
+        // height: 176px;
         margin-bottom: 14px;
         img{
             width: 100%;
@@ -159,6 +167,7 @@
         text-align: center;
     }
     .title{
+        @include ellip;
         display: block;
         text-align: left;
         font-size: 16px;

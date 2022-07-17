@@ -284,7 +284,7 @@ textarea::-webkit-outer-spin-button {
 
 .group-cs {
   margin: 0 60px 41px;
-  padding: 13px 0;
+  padding: 11px 0;
   border: 2px solid rgba(255, 255, 255, 0.5);
   text-align: center;
 }
@@ -294,7 +294,7 @@ textarea::-webkit-outer-spin-button {
   font-weight: 500;
 }
 .group-cs .desc {
-  margin: 7px 0 12px;
+  margin: 5px 0 13px;
   font-size: 12px;
   line-height: 15px;
 }
@@ -367,12 +367,10 @@ textarea::-webkit-outer-spin-button {
 .sc-visual {
   position: relative;
   width: 100%;
-  height: 400px;
 }
 .sc-visual .link-slide {
   display: block;
   width: 100%;
-  height: 100%;
 }
 .sc-visual .link-slide img {
   width: 100%;
@@ -407,7 +405,12 @@ textarea::-webkit-outer-spin-button {
 .sc-intro h3 {
   padding: 30px 0 8px;
 }
+.sc-intro .thumb-box img {
+  width: 100%;
+}
 .sc-intro .desc {
+  font-size: 13px;
+  line-height: 20px;
   padding: 18px 0 21px;
   text-align: left;
 }
@@ -422,9 +425,7 @@ textarea::-webkit-outer-spin-button {
   text-align: center;
 }
 .sc-recommend .group-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 45px 40px;
   height: 290px;
   background-image: url(../images/recommend_bg1.png);
   background-repeat: no-repeat;
@@ -438,8 +439,8 @@ textarea::-webkit-outer-spin-button {
 }
 .sc-recommend .info-box {
   padding: 20px 16px 0 15px;
-  width: 280px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .sc-recommend .title {
@@ -463,6 +464,11 @@ textarea::-webkit-outer-spin-button {
   display: block;
   margin-bottom: 14px;
 }
+.sc-event .thumb-box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .sc-event .info-box > * {
   display: block;
 }
@@ -472,6 +478,9 @@ textarea::-webkit-outer-spin-button {
   color: #858585;
 }
 .sc-event .title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 15px;
   font-weight: 700;
   margin: 13px 0 8px;
@@ -502,7 +511,6 @@ textarea::-webkit-outer-spin-button {
 }
 .sc-review .thumb-box {
   display: block;
-  height: 176px;
   margin-bottom: 14px;
 }
 .sc-review .thumb-box img {
@@ -515,6 +523,9 @@ textarea::-webkit-outer-spin-button {
   text-align: center;
 }
 .sc-review .title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   display: block;
   text-align: left;
   font-size: 16px;

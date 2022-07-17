@@ -629,6 +629,9 @@ header .group-flex .search-area .btn-search::after {
   display: block;
 }
 .sc-review .title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 22px;
   line-height: 29px;
   font-weight: 700;

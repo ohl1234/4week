@@ -226,6 +226,7 @@
         }
     }
     .title{
+        @include ellip;
         font-size: 22px;
         line-height: 29px;
         font-weight: 700;
