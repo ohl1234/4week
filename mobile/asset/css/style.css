@@ -387,3 +387,35 @@ textarea::-webkit-outer-spin-button {
   font-size: 13px;
   line-height: 20px;
 }
+
+.sc-event {
+  padding: 39px 35px 0 35px;
+}
+.sc-event .event-item + li {
+  margin-top: 39px;
+}
+.sc-event .thumb-box {
+  display: block;
+  margin-bottom: 14px;
+}
+.sc-event .info-box > * {
+  display: block;
+}
+.sc-event .date {
+  font-size: 12px;
+  line-height: 14px;
+  color: #858585;
+}
+.sc-event .title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 13px 0 8px;
+}
+.sc-event .desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 14px;
+}
