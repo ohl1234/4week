@@ -78,8 +78,10 @@ ul, ol {
     @세팅구역
 */
 body {
+  letter-spacing: -0.025em;
   font-family: "Noto Sans KR", sans-serif;
   color: #222;
+  min-width: 1248px;
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -366,19 +368,18 @@ header .group-flex .search-area .btn-search::after {
 }
 .footer .group-cs {
   width: 300px;
-  padding: 20px 21px 23px 21px;
+  padding: 20px 21px 23px 22px;
   border: 2px solid #fff;
-  text-align: center;
 }
 .footer .group-cs a {
-  font-size: 32px;
+  font-size: 36px;
   font-family: "Montserrat", "Noto Sans KR", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 .footer .title {
   font-size: 24px;
   font-family: "Montserrat", "Noto Sans KR", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 .footer .desc {
   margin: 2px 0 20px 0;
@@ -502,6 +503,8 @@ header .group-flex .search-area .btn-search::after {
 }
 .sc-intro .wrap .desc {
   margin: 41px 0 45px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .sc-recommend .sc-title {
@@ -540,7 +543,7 @@ header .group-flex .search-area .btn-search::after {
 }
 .sc-recommend .desc {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 28px;
   margin: 12px 0 46px;
 }
 
@@ -573,6 +576,9 @@ header .group-flex .search-area .btn-search::after {
   color: #858585;
 }
 .sc-event .title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   display: block;
   font-size: 22px;
   font-weight: 700;
@@ -706,7 +712,13 @@ header .group-flex .search-area .btn-search::after {
 }
 .group-board .date {
   color: #888;
-  margin-right: 26px;
+  margin: 0 26px 0 10px;
+}
+.group-board .text {
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .group-board .btn-more {
   position: absolute;

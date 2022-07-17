@@ -96,6 +96,8 @@
         }
         .desc{
             margin: 41px 0 45px;
+            font-size: 18px;
+            line-height: 28px;
         }
     }
 }
@@ -137,7 +139,7 @@
     }
     .desc{
         font-size: 18px;
-        line-height: 22px;
+        line-height: 28px;
         margin: 12px 0 46px;
     }
     
@@ -177,6 +179,7 @@
         color: #858585;
     }
     .title{
+        @include ellip;
         display: block;
         font-size: 22px;
         font-weight: 700;
@@ -303,7 +306,11 @@
     }
     .date{
         color: #888;
-        margin-right: 26px;
+        margin: 0 26px 0 10px;
+    }
+    .text{
+        flex: 1;
+        @include ellip;
     }
     .btn-more{
         position: absolute;
