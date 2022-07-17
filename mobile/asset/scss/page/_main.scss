@@ -192,3 +192,32 @@
         }
     }
 }
+.sc-board{
+    padding: 20px 20px 0 20px;
+    .sc-title{
+        padding: 16px 0 14px;
+        font-size: 16px;
+        line-height: 20px;        
+        font-weight: 500;
+        border-bottom: 2px solid #ddd;
+    }
+    .board-list{}
+    .board-item{
+        padding: 19px 0 15px;
+        border-bottom: 1px solid #ddd;
+        a{
+            display: flex;
+            & > *{
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+    .date{
+        color: #888;
+        margin-right: 19px;
+    }
+    .text{
+        @include ellip;
+    }
+}

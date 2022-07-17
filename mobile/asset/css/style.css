@@ -488,3 +488,34 @@ textarea::-webkit-outer-spin-button {
 .sc-review .pagination a.active {
   background-color: #ddd;
 }
+
+.sc-board {
+  padding: 20px 20px 0 20px;
+}
+.sc-board .sc-title {
+  padding: 16px 0 14px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid #ddd;
+}
+.sc-board .board-item {
+  padding: 19px 0 15px;
+  border-bottom: 1px solid #ddd;
+}
+.sc-board .board-item a {
+  display: flex;
+}
+.sc-board .board-item a > * {
+  font-size: 12px;
+  line-height: 14px;
+}
+.sc-board .date {
+  color: #888;
+  margin-right: 19px;
+}
+.sc-board .text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
