@@ -81,7 +81,7 @@ body {
   letter-spacing: -0.025em;
   font-family: "Noto Sans KR", sans-serif;
   color: #222;
-  min-width: 1248px;
+  min-width: 100%;
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -208,12 +208,141 @@ textarea::-webkit-outer-spin-button {
   margin: -1px;
 }
 
-p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-height: 25px;
-  max-height: 50px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical; /* autoprefixer: off */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 61px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .link-logo::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 133px;
+  height: 17px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header .btn-menu {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 19px;
+}
+.header .btn-menu span {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #222;
+}
+.header .btn-menu span:nth-child(2) {
+  top: 0;
+}
+.header .btn-menu span:nth-child(3) {
+  top: 8px;
+}
+.header .btn-menu span:last-child {
+  bottom: 0;
+}
+.header .link-shop {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+}
+.header .link-shop::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 23px;
+  height: 23px;
+  background-image: url(../images/shopping.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.link-detail {
+  display: inline-block;
+  width: 125px;
+  height: 40px;
+  line-height: 38px;
+  font-size: 12px;
+  color: #222;
+  border: 1px solid #222;
+  text-align: center;
+}
+
+.about-title, .sc-intro h3 {
+  font-size: 20px;
+  line-height: 38px;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container {
+  margin-top: 61px;
+}
+
+.sc-visual {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.sc-visual .link-slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sc-visual .link-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc-visual .pagination {
+  position: absolute;
+  bottom: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.sc-visual .pagination a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.sc-visual .pagination a + a {
+  margin-left: 9px;
+}
+.sc-visual .pagination a.active {
+  background-color: #fff;
+}
+
+.sc-intro {
+  padding: 0 10px;
+  text-align: center;
+}
+.sc-intro h3 {
+  padding: 30px 0 8px;
+}
+.sc-intro .desc {
+  padding: 18px 0 21px;
+  text-align: left;
 }
