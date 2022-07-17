@@ -221,3 +221,45 @@
         @include ellip;
     }
 }
+.group-sns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 61px;
+    height: 80px;
+    background-color: #d71609;
+    .link-sns{
+        & + a{
+            margin-left: 25px;
+        }
+        &::after{
+            content: '';
+            display: inline-block;
+            vertical-align: top;
+            width: 35px;
+            height: 35px;
+            background-image: url(../images/facebook.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &.blog{
+            &::after{
+                background-image: url(../images/blog.png);
+                background-size: contain;
+            }
+        }
+        &.instargram{
+            &::after{
+                background-image: url(../images/instargram.png);
+                background-size: contain;
+            }
+        }
+        &.youtube{
+            &::after{
+                background-image: url(../images/youtube.png);
+                background-size: contain;
+            }
+        }
+    }
+}

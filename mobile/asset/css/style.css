@@ -276,6 +276,71 @@ textarea::-webkit-outer-spin-button {
   background-size: contain;
 }
 
+.footer {
+  background-color: #aaa;
+  padding: 35px 0;
+  color: #fff;
+}
+
+.group-cs {
+  margin: 0 60px 41px;
+  padding: 13px 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.group-cs .title {
+  font-size: 16px;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+.group-cs .desc {
+  margin: 7px 0 12px;
+  font-size: 12px;
+  line-height: 15px;
+}
+.group-cs a {
+  font-size: 20px;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+.group-info {
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.group-info .footer-logo {
+  margin-bottom: 19px;
+}
+.group-info .footer-logo a::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 135px;
+  height: 17px;
+  background-image: url(../images/footer_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.group-info .addr-wrap i::after {
+  content: "";
+  display: inline-block;
+  vertical-align: -1px;
+  width: 1px;
+  height: 12px;
+  margin: 0 8px;
+  background-color: #fff;
+}
+.group-info .addr-wrap span {
+  display: block;
+}
+.group-info .copy {
+  margin-top: 18px;
+}
+.group-info .copy span {
+  display: block;
+}
+
 .link-detail {
   display: inline-block;
   width: 125px;
@@ -518,4 +583,39 @@ textarea::-webkit-outer-spin-button {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.group-sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 61px;
+  height: 80px;
+  background-color: #d71609;
+}
+.group-sns .link-sns + a {
+  margin-left: 25px;
+}
+.group-sns .link-sns::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.group-sns .link-sns.blog::after {
+  background-image: url(../images/blog.png);
+  background-size: contain;
+}
+.group-sns .link-sns.instargram::after {
+  background-image: url(../images/instargram.png);
+  background-size: contain;
+}
+.group-sns .link-sns.youtube::after {
+  background-image: url(../images/youtube.png);
+  background-size: contain;
 }
