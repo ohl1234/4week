@@ -564,16 +564,16 @@ header .group-flex .search-area .btn-search::after {
   margin-top: 50px;
 }
 .sc-event .thumb-box {
+  display: block;
   margin-bottom: 23px;
 }
-.sc-event .info-box > * {
-  display: block;
-}
 .sc-event .date {
+  display: block;
   font-size: 18px;
   color: #858585;
 }
 .sc-event .title {
+  display: block;
   font-size: 22px;
   font-weight: 700;
   margin: 13px 0 9px;

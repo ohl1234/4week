@@ -163,18 +163,21 @@
         }
     }
     .thumb-box{
+        display: block;
         margin-bottom: 23px;
     }
     .info-box{
-        & > *{
-            display: block;
-        }
+        // & > *{
+        //     display: block;
+        // }
     }
     .date{
+        display: block;
         font-size: 18px;
         color: #858585;
     }
     .title{
+        display: block;
         font-size: 22px;
         font-weight: 700;
         margin: 13px 0 9px;
